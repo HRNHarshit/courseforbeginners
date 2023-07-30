@@ -1,0 +1,19 @@
+:root {
+  font-size: 62.5%;
+}
+
+.App3 {
+  align-items: center;
+}
+
+.App3 h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: red;
+}
+
+.App3 p {
+  font-size: 2rem;
+  text-align: center;
+  color: blue;
+}
