@@ -80,7 +80,11 @@ import ReactDOM from "react-dom/client";
 // Fetching data from API's
 import App13 from "./App/App13";
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<App13 />);
+root.render(
+  <React.StrictMode>
+    <App13 />
+  </React.StrictMode>
+);
 
 // //
 // import App14 from "./App/App14";
