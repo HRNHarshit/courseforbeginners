@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App15 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.App15 .navbar {
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 100vw;
+  padding: 10px 10px;
+  margin-bottom: 20px;
+}
+
+.App15 .navbar a {
+  margin: 0 15px;
+  font-size: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+
+.App15 .navbar a:hover {
+  opacity: 0.9;
+}

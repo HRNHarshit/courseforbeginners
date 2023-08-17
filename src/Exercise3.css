@@ -1,0 +1,28 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.App input {
+  border: 2px solid black;
+  border-radius: 8px;
+  font-size: 18px;
+  padding: 10px 15px;
+  text-align: center;
+}
+
+.App .btn {
+  border: 2px solid black;
+  border-radius: 8px;
+  font-size: 18px;
+  padding: 5px 10px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.App p {
+  font-size: 20px;
+}

@@ -5,14 +5,18 @@ import "../App Styles/App13.css";
 const App13 = () => {
   const [catFact, setCatFact] = useState("");
 
-  useEffect(() => {
+  const newFact = () => {
     axios.get("https://catfact.ninja/fact").then((response) => setCatFact(response.data.fact));
-  }, []);
-  
+  };
+
+  useEffect(() => newFact(), []);
+
   return (
     <>
       <div className="App13">
-        <button className="btn">Generate Cat Fact</button>
+        <button className="btn" onClick={newFact}>
+          Generate Cat Fact
+        </button>
         <p className="text">{catFact}</p>
       </div>
     </>

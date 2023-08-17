@@ -77,31 +77,32 @@ import ReactDOM from "react-dom/client";
 //   </React.StrictMode>
 // );
 
-// Fetching data from API's
-import App13 from "./App/App13";
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-  <React.StrictMode>
-    <App13 />
-  </React.StrictMode>
-);
+// // Fetching data from API's
+// import App13 from "./App/App13";
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(<App13 />);
 
 // //
 // import App14 from "./App/App14";
 // const root = ReactDOM.createRoot(document.getElementById("root"));
 // root.render(<App14 />);
 
-// //
+// // Exercise-3
+// import Exercise3 from "./Exercise3";
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(<Exercise3 />);
+
+// // React Router DOM
 // import App15 from "./App/App15";
 // const root = ReactDOM.createRoot(document.getElementById("root"));
 // root.render(<App15 />);
 
-// //
+// // State Management, UseContext Hook
 // import App16 from "./App/App16";
 // const root = ReactDOM.createRoot(document.getElementById("root"));
 // root.render(<App16 />);
 
-// //
-// import App17 from "./App/App17";
-// const root = ReactDOM.createRoot(document.getElementById("root"));
-// root.render(<App17 />);
+// React Query
+import App17 from "./App/App17";
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<App17 />);
