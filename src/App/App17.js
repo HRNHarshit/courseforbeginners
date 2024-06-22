@@ -1,16 +1,23 @@
-import React, { useState, createContext } from "react";
+import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Home, Profile, Contact, Error, Navbar } from "../pages";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import "../App Styles/App17.css";
 
-export const AppContext = createContext();
-
 const App17 = () => {
-  const [userName, setUserName] = useState("Harshit");
+  // const client = new QueryClient();
+  const client = new QueryClient({
+    defaultOptions: {
+      queries: {
+        refetchOnWindowFocus: false,
+      },
+    },
+  });
+
   return (
     <>
       <div className="App17">
-        <AppContext.Provider value={{ userName, setUserName }}>
+        <QueryClientProvider client={client}>
           <BrowserRouter>
             <Navbar />
 
@@ -21,7 +28,7 @@ const App17 = () => {
               <Route path="*" element={<Error />} />
             </Routes>
           </BrowserRouter>
-        </AppContext.Provider>
+        </QueryClientProvider>
       </div>
     </>
   );

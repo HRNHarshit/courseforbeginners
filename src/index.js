@@ -102,7 +102,18 @@ import ReactDOM from "react-dom/client";
 // const root = ReactDOM.createRoot(document.getElementById("root"));
 // root.render(<App16 />);
 
-// React Query
-import App17 from "./App/App17";
+// // React Query
+// // npm install @tanstack/react-query
+// import App17 from "./App/App17";
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(<App17 />);
+
+// Forms in React
+// npm install react-hook-form yup
+import App18 from "./App/App18";
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<App17 />);
+root.render(
+  <React.StrictMode>
+    <App18 />
+  </React.StrictMode>
+);

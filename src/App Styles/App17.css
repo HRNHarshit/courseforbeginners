@@ -35,6 +35,39 @@
   opacity: 0.8;
 }
 
+/* ################### Home Styling ####################### */
+
+.home h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.home .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.home .btn button {
+  border: 3px solid black;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 5px 15px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.home .btn button:hover {
+  opacity: 0.7;
+  padding: 6px 16px;
+}
+
+/* #################### Profile Styling #################### */
+
 .profile {
   display: flex;
   align-items: center;
@@ -44,6 +77,8 @@
 .profile h1 {
   text-align: center;
 }
+
+/* ################## ChangeProfile Styling ################# */
 
 .changeProfile {
   margin-top: 20px;
